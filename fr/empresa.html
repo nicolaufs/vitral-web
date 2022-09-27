@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="fr">
-
-<head>
-
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="Vitral Grup" />
-    <meta name="description" content="Fabrication de verre pour la construction, fermetures en aluminium et PVC ">
-    <meta name="keywords" content="PVC,Verre,Aluminium,Fermetures">
+    <meta
+      name="description"
+      content="Fabrication de verre pour la construction, fermetures en aluminium et PVC "
+    />
+    <meta name="keywords" content="PVC,Verre,Aluminium,Fermetures" />
 
     <!-- Stylesheets
 	============================================= -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700" rel="stylesheet"
-        type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="../style.css" type="text/css" />
     <link rel="stylesheet" href="../css/dark.css" type="text/css" />
@@ -26,323 +30,392 @@
 	============================================= -->
     <title>VITRAL GRUP | BIENTÔT DISPONIBLE</title>
     <style>
-        canvas {
-            border: 1px solid #eee;
-            background-color: #fcfcfc;
-        }
+      canvas {
+        border: 1px solid #eee;
+        background-color: #fcfcfc;
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="stretched" onload="startGame()">
-
-
+  <body class="stretched" onload="startGame()">
     <!-- Document Wrapper
 	============================================= -->
     <div id="wrapper" class="clearfix">
-
-        <div id="top-bar">
-
-            <div class="container clearfix">
-
-                <div class="col_half nobottommargin clearfix">
-
-                    <!-- Top Social
+      <div id="top-bar">
+        <div class="container clearfix">
+          <div class="col_half nobottommargin clearfix">
+            <!-- Top Social
 					============================================= -->
-                    <div id="top-social">
-                        <ul>
-                            <li><a href="https://www.facebook.com/vitralgrup/" class="si-facebook" target="_blank"><span
-                                        class="ts-icon"><i class="icon-facebook"></i></span><span
-                                        class="ts-text">Facebook</span></a></li>
-                            <li><a href="https://www.instagram.com/vitralgrup/" class="si-instagram"
-                                    target="_blank"><span class="ts-icon"><i class="icon-instagram2"></i></span><span
-                                        class="ts-text">Instagram</span></a></li>
-                            <li><a href="https://www.linkedin.com/company/vitral-grup/" class="si-linkedin"
-                                    target="_blank"><span class="ts-icon"><i class="icon-linkedin"></i></span><span
-                                        class="ts-text">Linkedin</span></a></li>
-                        </ul>
-                    </div><!-- #top-social end -->
+            <div id="top-social">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/vitralgrup/"
+                    class="si-facebook"
+                    target="_blank"
+                  >
+                    <span class="ts-icon"><i class="icon-facebook"></i></span>
+                    <span class="ts-text">Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/vitralgrup/"
+                    class="si-instagram"
+                    target="_blank"
+                  >
+                    <span class="ts-icon"><i class="icon-instagram2"></i></span>
+                    <span class="ts-text">Instagram</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/vitral-grup/"
+                    class="si-linkedin"
+                    target="_blank"
+                  >
+                    <span class="ts-icon"><i class="icon-linkedin"></i></span>
+                    <span class="ts-text">Linkedin</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- #top-social end -->
+          </div>
 
-                </div>
-
-                <div class="col_half fright col_last clearfix nobottommargin">
-
-                    <!-- Top Links
+          <div class="col_half fright col_last clearfix nobottommargin">
+            <!-- Top Links
 					============================================= -->
-                    <div class="top-links">
-                        <ul>
-                            <li><a href="#"><img src="../images/fr.png" alt=""> <span id="language-name">FRANÇAIS</span></a>
-                                <ul>
-                                    <li><a href="../en/index.html"><img src="../images/en.png" alt="">
-                                            ENGLISH</a></li>
-                                    <li><a href="../index.html"><img src="../images/ca.png">
-                                            CATALAN</a></li>
-                                    <li><a href="../es/index.html"><img src="../images/es.png">
-                                            CASTELLANO</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div><!-- .top-links end -->
-
-                </div>
-
+            <div class="top-links">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="../images/fr.png" alt="" />
+                    <span id="language-name">FRANÇAIS</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="../en/index.html">
+                        <img src="../images/en.png" alt="" />
+                        ENGLISH
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../index.html">
+                        <img src="../images/ca.png" />
+                        CATALAN
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../es/index.html">
+                        <img src="../images/es.png" />
+                        CASTELLANO
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
+            <!-- .top-links end -->
+          </div>
+        </div>
+      </div>
+      <!-- #top-bar end -->
 
-        </div><!-- #top-bar end -->
-
-        <!-- Header
+      <!-- Header
 		============================================= -->
-        <header id="header" class="full-header">
-
-			<div id="info-menu" class="container clearfix">
-
-                <div class="container clearfix">
-
-                    <!-- Logo
+      <header id="header" class="full-header">
+        <div id="info-menu" class="container clearfix">
+          <div class="container clearfix">
+            <!-- Logo
 					============================================= -->
-                    <div id="logo" class="divcenter">
-                        <a href="index.html" class="standard-logo" data-dark-logo="../images/logo_.png"><img
-                                src="../images/logo_.png" alt="VG Logo" class="divcenter"></a>
-                    </div><!-- #logo end -->
-
-                </div>
-
+            <div id="logo" class="divcenter">
+              <a
+                href="index.html"
+                class="standard-logo"
+                data-dark-logo="../images/logo_.png"
+              >
+                <img
+                  src="../images/logo_.png"
+                  alt="VG Logo"
+                  class="divcenter"
+                />
+              </a>
             </div>
+            <!-- #logo end -->
+          </div>
+        </div>
+      </header>
+      <!-- #header end -->
 
-        </header><!-- #header end -->
-
-        <!-- Content
+      <!-- Content
 		============================================= -->
-        <section id="content">
+      <section id="content">
+        <div class="content-wrap">
+          <div class="container clearfix nobottommargin">
+            <div class="heading-block center nobottomborder">
+              <h1 style="font-weight: 500; letter-spacing: 0px;">
+                Site En Maintenance
+              </h1>
+            </div>
 
-            <div class="content-wrap">
-
-                <div class="container clearfix nobottommargin">
-
-                    <div class="heading-block center nobottomborder">
-                        <h1 style="font-weight: 500; letter-spacing: 0px;">Site En Maintenance</h1>
-                    </div>
-
-                    <div class="col_one_third topmargin-sm nobottommargin">
-                        <div class="feature-box fbox-center fbox-light fbox-plain">
-                            <div class="fbox-icon">
-                                <a href="#"><i class="icon-warning-sign" style="color: #28497a;"></i></a>
-                            </div>
-                            <h3>Pourquoi le site est-il en panne?</h3>
-                            <p>Nous travaillons actuellement à l'amélioration du site Web et de son contenu.</p>
-                        </div>
-                    </div>
-
-                    <div class="col_one_third topmargin-sm nobottommargin">
-                        <div class="feature-box fbox-center fbox-light fbox-plain">
-                            <div class="fbox-icon">
-                                <a href="#"><i class="icon-time" style="color: #28497a;"></i></a>
-                            </div>
-                            <h3>Qu'est-ce que le temps d'arrêt?</h3>
-                            <p>Nous sommes généralement de retour dans les 1-2 heures, mais cela dépend certainement du
-                                problème.</p>
-                        </div>
-                    </div>
-
-                    <div class="col_one_third topmargin-sm nobottommargin col_last">
-                        <div class="feature-box fbox-center fbox-light fbox-plain">
-                            <div class="fbox-icon">
-                                <a href="#"><i class="icon-email3" style="color: #28497a;"></i></a>
-                            </div>
-                            <h3>Avez-vous besoin d'assistance?</h3>
-                            <p>Vous pouvez simplement nous envoyer un e-mail à <a
-                                    href="mailto:vitral@vitral.es"><strong>vitral@vitral.es</strong></a>
-                                si vous avez besoin du soutien urgent.</p>
-                        </div>
-                    </div>
-
+            <div class="col_one_third topmargin-sm nobottommargin">
+              <div class="feature-box fbox-center fbox-light fbox-plain">
+                <div class="fbox-icon">
+                  <a href="#">
+                    <i class="icon-warning-sign" style="color: #004e8c;"></i>
+                  </a>
                 </div>
-
+                <h3>Pourquoi le site est-il en panne?</h3>
+                <p>
+                  Nous travaillons actuellement à l'amélioration du site Web et
+                  de son contenu.
+                </p>
+              </div>
             </div>
 
-        </section><!-- #content end -->
-
-        <section>
-            <div class="container center notopmargin bottommargin-sm">
-                <div id="game-container"></div>
-                <br>
-                <button class="btn" onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)"
-                    style="color: white; background-color: #28497a;">ACCÉLÉRER</button>
+            <div class="col_one_third topmargin-sm nobottommargin">
+              <div class="feature-box fbox-center fbox-light fbox-plain">
+                <div class="fbox-icon">
+                  <a href="#">
+                    <i class="icon-time" style="color: #004e8c;"></i>
+                  </a>
+                </div>
+                <h3>Qu'est-ce que le temps d'arrêt?</h3>
+                <p>
+                  Nous sommes généralement de retour dans les 1-2 heures, mais
+                  cela dépend certainement du problème.
+                </p>
+              </div>
             </div>
-        </section>
 
-        <!-- Footer
+            <div class="col_one_third topmargin-sm nobottommargin col_last">
+              <div class="feature-box fbox-center fbox-light fbox-plain">
+                <div class="fbox-icon">
+                  <a href="#">
+                    <i class="icon-email3" style="color: #004e8c;"></i>
+                  </a>
+                </div>
+                <h3>Avez-vous besoin d'assistance?</h3>
+                <p>
+                  Vous pouvez simplement nous envoyer un e-mail à
+                  <a href="mailto:vitral@vitral.es">
+                    <strong>vitral@vitral.es</strong>
+                  </a>
+                  si vous avez besoin du soutien urgent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #content end -->
+
+      <section>
+        <div class="container center notopmargin bottommargin-sm">
+          <div id="game-container"></div>
+          <br />
+          <button
+            class="btn"
+            onmousedown="accelerate(-0.2)"
+            onmouseup="accelerate(0.05)"
+            style="color: white; background-color: #004e8c;"
+          >
+            ACCÉLÉRER
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer
 		============================================= -->
-        <footer id="footer" class="dark"
-            style="background: url('../images/footer-bg.jpg') repeat fixed; background-size: 100% 100%;">
-
-            <!-- Copyrights
+      <footer
+        id="footer"
+        class="dark"
+        style="
+          background: url('../images/footer-bg.jpg') repeat fixed;
+          background-size: 100% 100%;
+        "
+      >
+        <!-- Copyrights
         ============================================= -->
-            <div id="copyrights">
+        <div id="copyrights">
+          <div class="container clearfix">
+            <div class="col_half">
+              <div class="copyrights-menu copyright-links clearfix"></div>
+              <div class="copyright-links clearfix" style="font-size: smaller;">
+                <a href="../legal.html">Legal Notice</a>
+                · Copyrights &copy; 2020 All Rights Reserved by VITRAL GRUP
+              </div>
+            </div>
 
-                <div class="container clearfix">
+            <div class="col_half col_last tright">
+              <div class="fright clearfix">
+                <a
+                  href="https://www.facebook.com/vitralgrup/"
+                  class="social-icon si-small si-borderless nobottommargin si-facebook"
+                >
+                  <i class="icon-facebook"></i>
+                  <i class="icon-facebook"></i>
+                </a>
 
-                    <div class="col_half">
-                        <div class="copyrights-menu copyright-links clearfix">
+                <a
+                  href="https://www.instagram.com/vitralgrup/"
+                  class="social-icon si-small si-borderless nobottommargin si-instagram"
+                >
+                  <i class="icon-instagram2"></i>
+                  <i class="icon-instagram2"></i>
+                </a>
 
-                        </div>
-                        <div class="copyright-links clearfix" style="font-size: smaller;"><a href="../legal.html">Legal
-                                Notice</a>
-                            · Copyrights &copy; 2020 All Rights Reserved by VITRAL GRUP</div>
-                    </div>
-
-                    <div class="col_half col_last tright">
-                        <div class="fright clearfix">
-                            <a href="https://www.facebook.com/vitralgrup/"
-                                class="social-icon si-small si-borderless nobottommargin si-facebook">
-                                <i class="icon-facebook"></i>
-                                <i class="icon-facebook"></i>
-                            </a>
-
-                            <a href="https://www.instagram.com/vitralgrup/"
-                                class="social-icon si-small si-borderless nobottommargin si-instagram">
-                                <i class="icon-instagram2"></i>
-                                <i class="icon-instagram2"></i>
-                            </a>
-
-                            <a href="https://www.linkedin.com/company/vitral-grup/"
-                                class="social-icon si-small si-borderless nobottommargin si-linkedin">
-                                <i class="icon-linkedin"></i>
-                                <i class="icon-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div><!-- #copyrights end -->
-        </footer><!-- #footer end -->
-
-    </div><!-- #wrapper end -->
+                <a
+                  href="https://www.linkedin.com/company/vitral-grup/"
+                  class="social-icon si-small si-borderless nobottommargin si-linkedin"
+                >
+                  <i class="icon-linkedin"></i>
+                  <i class="icon-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #copyrights end -->
+      </footer>
+      <!-- #footer end -->
+    </div>
+    <!-- #wrapper end -->
 
     <!-- Go To Top
 	============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
 
     <script>
+      var myGamePiece
+      var myObstacles = []
+      var myScore
 
-        var myGamePiece;
-        var myObstacles = [];
-        var myScore;
+      function startGame() {
+        myGamePiece = new component(30, 30, '#004E8C', 10, 120)
+        myGamePiece.gravity = 0.05
+        myScore = new component('16px', 'Roboto', 'grey', 280, 40, 'text')
+        myGameArea.start()
+      }
 
-        function startGame() {
-            myGamePiece = new component(30, 30, "#28497a", 10, 120);
-            myGamePiece.gravity = 0.05;
-            myScore = new component("16px", "Roboto", "grey", 280, 40, "text");
-            myGameArea.start();
+      var myGameArea = {
+        canvas: document.createElement('canvas'),
+        start: function () {
+          this.canvas.width = 470
+          this.canvas.height = 230
+          this.context = this.canvas.getContext('2d')
+          var game = document.getElementById('game-container')
+          game.insertBefore(this.canvas, game.childNodes[0])
+          this.frameNo = 0
+          this.interval = setInterval(updateGameArea, 10)
+        },
+        clear: function () {
+          this.context.clearRect(0, 0, this.canvas.width, this.canvas.height)
+        },
+      }
+
+      function component(width, height, color, x, y, type) {
+        this.type = type
+        this.score = 0
+        this.width = width
+        this.height = height
+        this.speedX = 0.03
+        this.speedY = 0
+        this.x = x
+        this.y = y
+        this.gravity = 0.5
+        this.gravitySpeed = 0
+        this.update = function () {
+          ctx = myGameArea.context
+          if (this.type == 'text') {
+            ctx.font = this.width + ' ' + this.height
+            ctx.fillStyle = color
+            ctx.fillText(this.text, this.x, this.y)
+          } else {
+            ctx.fillStyle = color
+            ctx.fillRect(this.x, this.y, this.width, this.height)
+          }
         }
-
-        var myGameArea = {
-            canvas: document.createElement("canvas"),
-            start: function () {
-                this.canvas.width = 470;
-                this.canvas.height = 230;
-                this.context = this.canvas.getContext("2d");
-                var game = document.getElementById("game-container");
-                game.insertBefore(this.canvas, game.childNodes[0]);
-                this.frameNo = 0;
-                this.interval = setInterval(updateGameArea, 10);
-            },
-            clear: function () {
-                this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
-            }
+        this.newPos = function () {
+          this.gravitySpeed += this.gravity
+          this.x += this.speedX
+          this.y += this.speedY + this.gravitySpeed
+          this.hitBottom()
         }
-
-        function component(width, height, color, x, y, type) {
-            this.type = type;
-            this.score = 0;
-            this.width = width;
-            this.height = height;
-            this.speedX = 0.03;
-            this.speedY = 0;
-            this.x = x;
-            this.y = y;
-            this.gravity = 0.5;
-            this.gravitySpeed = 0;
-            this.update = function () {
-                ctx = myGameArea.context;
-                if (this.type == "text") {
-                    ctx.font = this.width + " " + this.height;
-                    ctx.fillStyle = color;
-                    ctx.fillText(this.text, this.x, this.y);
-                } else {
-                    ctx.fillStyle = color;
-                    ctx.fillRect(this.x, this.y, this.width, this.height);
-                }
-            }
-            this.newPos = function () {
-                this.gravitySpeed += this.gravity;
-                this.x += this.speedX;
-                this.y += this.speedY + this.gravitySpeed;
-                this.hitBottom();
-            }
-            this.hitBottom = function () {
-                var rockbottom = myGameArea.canvas.height - this.height;
-                if (this.y > rockbottom) {
-                    this.y = rockbottom;
-                    this.gravitySpeed = 0;
-                }
-            }
-            this.crashWith = function (otherobj) {
-                var myleft = this.x;
-                var myright = this.x + (this.width);
-                var mytop = this.y;
-                var mybottom = this.y + (this.height);
-                var otherleft = otherobj.x;
-                var otherright = otherobj.x + (otherobj.width);
-                var othertop = otherobj.y;
-                var otherbottom = otherobj.y + (otherobj.height);
-                var crash = true;
-                if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
-                    crash = false;
-                }
-                return crash;
-            }
+        this.hitBottom = function () {
+          var rockbottom = myGameArea.canvas.height - this.height
+          if (this.y > rockbottom) {
+            this.y = rockbottom
+            this.gravitySpeed = 0
+          }
         }
-
-        function updateGameArea() {
-            var x, height, gap, minHeight, maxHeight, minGap, maxGap;
-            for (i = 0; i < myObstacles.length; i += 1) {
-                if (myGamePiece.crashWith(myObstacles[i])) {
-                    return;
-                }
-            }
-            myGameArea.clear();
-            myGameArea.frameNo += 1;
-            if (myGameArea.frameNo == 1 || everyinterval(150)) {
-                x = myGameArea.canvas.width;
-                minHeight = 20;
-                maxHeight = 190;
-                height = Math.floor(Math.random() * (maxHeight - minHeight + 1) + minHeight);
-                minGap = 50;
-                maxGap = 200;
-                gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap);
-                myObstacles.push(new component(10, height, "#b3e6ff", x, 0));
-                myObstacles.push(new component(10, x - height - gap, "#b3e6ff", x, height + gap));
-            }
-            for (i = 0; i < myObstacles.length; i += 1) {
-                myObstacles[i].x += -1;
-                myObstacles[i].update();
-            }
-            myScore.text = "SCORE: " + myGameArea.frameNo;
-            myScore.update();
-            myGamePiece.newPos();
-            myGamePiece.update();
+        this.crashWith = function (otherobj) {
+          var myleft = this.x
+          var myright = this.x + this.width
+          var mytop = this.y
+          var mybottom = this.y + this.height
+          var otherleft = otherobj.x
+          var otherright = otherobj.x + otherobj.width
+          var othertop = otherobj.y
+          var otherbottom = otherobj.y + otherobj.height
+          var crash = true
+          if (
+            mybottom < othertop ||
+            mytop > otherbottom ||
+            myright < otherleft ||
+            myleft > otherright
+          ) {
+            crash = false
+          }
+          return crash
         }
+      }
 
-        function everyinterval(n) {
-            if ((myGameArea.frameNo / n) % 1 == 0) { return true; }
-            return false;
+      function updateGameArea() {
+        var x, height, gap, minHeight, maxHeight, minGap, maxGap
+        for (i = 0; i < myObstacles.length; i += 1) {
+          if (myGamePiece.crashWith(myObstacles[i])) {
+            return
+          }
         }
+        myGameArea.clear()
+        myGameArea.frameNo += 1
+        if (myGameArea.frameNo == 1 || everyinterval(150)) {
+          x = myGameArea.canvas.width
+          minHeight = 20
+          maxHeight = 190
+          height = Math.floor(
+            Math.random() * (maxHeight - minHeight + 1) + minHeight,
+          )
+          minGap = 50
+          maxGap = 200
+          gap = Math.floor(Math.random() * (maxGap - minGap + 1) + minGap)
+          myObstacles.push(new component(10, height, '#b3e6ff', x, 0))
+          myObstacles.push(
+            new component(10, x - height - gap, '#b3e6ff', x, height + gap),
+          )
+        }
+        for (i = 0; i < myObstacles.length; i += 1) {
+          myObstacles[i].x += -1
+          myObstacles[i].update()
+        }
+        myScore.text = 'SCORE: ' + myGameArea.frameNo
+        myScore.update()
+        myGamePiece.newPos()
+        myGamePiece.update()
+      }
 
-        function accelerate(n) {
-            myGamePiece.gravity = n;
+      function everyinterval(n) {
+        if ((myGameArea.frameNo / n) % 1 == 0) {
+          return true
         }
+        return false
+      }
+
+      function accelerate(n) {
+        myGamePiece.gravity = n
+      }
     </script>
 
     <!-- External JavaScripts
@@ -353,7 +426,5 @@
     <!-- Footer Scripts
 	============================================= -->
     <script src="../js/functions.js"></script>
-
-</body>
-
+  </body>
 </html>
