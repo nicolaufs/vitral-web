@@ -1389,7 +1389,7 @@ body.stretched #header.full-header .container {
 
 #logo a.standard-logo {
   display: block;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 #logo a.retina-logo {
@@ -11566,13 +11566,13 @@ body:not(.device-touch) .clients-grid li a {
   text-align: center;
 }
 .catalog li a {
-  /* box-shadow: 1px 1px 2px rgba(0,0,0,0.5); */
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .catalog.white li a {
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .catalog li p {
@@ -11586,7 +11586,8 @@ body:not(.device-touch) .clients-grid li a {
 
 .catalog li a:hover {
   opacity: 0.8;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
 .clients-grid li a img {
