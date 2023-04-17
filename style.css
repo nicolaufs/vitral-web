@@ -11546,6 +11546,7 @@ body:not(.device-touch) .clients-grid li a {
 }
 
 .clients-grid li a,
+.clients-grid li div,
 .clients-grid li img {
   display: block;
   width: 75%;
@@ -11570,7 +11571,8 @@ body:not(.device-touch) .clients-grid li a {
   padding-bottom: 0;
 }
 
-.catalog.white li a {
+.catalog.white li a,
+.catalog.white li div {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
