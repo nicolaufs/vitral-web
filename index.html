@@ -110,6 +110,10 @@
 
 		@media screen and (max-width: 840px) {
 
+			#companies-logo {
+				display: none !important;
+			}
+
 			.testi-content p {
 				font-size: 22px;
 			}
@@ -173,24 +177,25 @@
 	<!-- Document Wrapper
 	============================================= -->
 	<div id="wrapper" class="clearfix">
-		<div class="modal-on-load" data-target="#myModal1"></div>
+		<div id="modal-bg" class="modal-on-load" data-target="#myModal1"></div>
 		<div class="modal1 mfp-hide subscribe-widget divcenter" id="myModal1" style="max-width: 750px;">
 			<div class="row justify-content-center bg-white align-items-center" style="min-height: 240px;">
 				<div class="bg-white p-4 text-center">
 					<div class="heading-block nobottomborder mb-3">
-						<h3 class="font-secondary nott ">Vitral Grup celebra el seu <span style="color: #004E8C;">60è</span> aniversari!</h3>
+						<h3 class="font-secondary nott">Vitral Grup celebra el seu <span style="color: #004E8C;">60è</span> aniversari!</h3>
 						<!-- <div class="video-wrap" style="z-index: 1;">
 							<div class="video-overlay" style="background: rgba(0,0,0,0.25);"> -->
 
-								<iframe width="530" height="320" style="padding: 25px;"
+								<iframe width="530" height="320" style="padding: 25px; max-width: 90vw; max-height: 60vw;"
 									src="https://www.youtube.com/embed/hRsMyAWL1Vo?autoplay=1&mute=1">
 								</iframe> 
 							<!-- </div>
 						</div> -->
 						<span>Agraïm a clients, proveïdors i col·laboradors la seva fidelitat i esperem continuar estant al seu costat molts anys més.</span>
 					</div>
+					
 					<div class="center text-center p-2" style="background: url('images/logo_60.png') no-repeat center ; background-size: contain;  min-height: 120px;"></div>
-					<div class="row mb-2 p-2">
+					<div id="companies-logo" class="row mb-2 p-2">
 						<div class="col-md-3 col-6 p-2 mt-4" style="background: url('images/vitral-vidre-logo.png') no-repeat center ; background-size:contain;  min-height: 30px;"></div>
 						<div class="col-md-3 col-6 p-2 mt-4" style="background: url('images/vitral-edificacio-logo.png') no-repeat center ; background-size: contain;  min-height: 30px;"></div>
 						<div class="col-md-3 col-6 p-2 mt-4" style="background: url('images/vitral-tancaments-logo.png') no-repeat center ; background-size: contain;  min-height: 30px;"></div>
