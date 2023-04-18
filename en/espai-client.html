@@ -73,6 +73,20 @@
         transform: rotate(90deg);
         color: #004e8c;
       }
+
+      .login-form {
+        padding: 30px 60px 30px 60px;
+        border: 0px solid #999;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
+      }
+
+      @media screen and (max-width: 840px) {
+        .login-form {
+          padding: none;
+          border: none;
+          box-shadow: none;
+        }
+      }
     </style>
   </head>
 
@@ -254,1062 +268,1223 @@
       </header>
       <!-- #header end -->
 
-      <!-- Page Title
-        ============================================= -->
-      <section
-        id="page-title"
-        class="page-title-parallax page-title-dark"
-        style="background-image: linear-gradient(to right, #004e8c, #004e8c42);"
-      >
-        <div class="container clearfix">
-          <h1>Customer Area</h1>
-        </div>
-      </section>
-      <!-- #page-title end -->
-
       <!-- Content
         ============================================= -->
 
       <section>
         <div class="content-wrap">
-          <div
-            id="signin-form"
-            class="container clearfix nobottommarginnotopmargin"
-          >
-            <div class="col_one_third"></div>
-
-            <div
-              class="form-widget col_one_third"
-              style="
-                padding: 30px 60px 30px 60px;
-                border: 0px solid #999;
-                box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.35);
-              "
-            >
-              <div class="form-result"></div>
-
-              <h5>Sign In</h5>
-
-              <div class="col_full bottommargin-sm">
-                <input
-                  type="text"
-                  id="loginform-user"
-                  name="user"
-                  value=""
-                  placeholder="Usuario"
-                  class="sm-form-control required"
-                />
-              </div>
-
-              <div class="col_full bottommargin-sm">
-                <input
-                  type="password"
-                  id="loginform-password"
-                  name="password"
-                  value=""
-                  placeholder="Contraseña"
-                  class="required sm-form-control"
-                />
-              </div>
-
-              <div class="col_full hidden">
-                <input
-                  type="text"
-                  id="loginform-botcheck"
-                  name="loginform-botcheck"
-                  value=""
-                  class="sm-form-control"
-                />
-              </div>
-
-              <div class="col_full">
-                <button
-                  name="submit"
-                  type="button"
-                  id="submit-button"
-                  value="Entrar"
-                  onclick="processForm()"
-                  class="button button-3d nomargin center"
-                >
-                  ENTER
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div
-            id="catalogs"
-            class="container clearbix bottommargin-sm notopmargin"
-            style="display: none;"
-          >
-            <div class="toggle toggle-border" data-animate="fadeInUp">
-              <div class="togglet">
-                <i class="toggle-closed icon-line-circle-plus"></i>
-                <i class="toggle-open icon-line-circle-cross"></i>
-                Building Glass
-              </div>
-              <div class="togglec">
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet">
-                    <h6>Commercial Catalogs for Facades and Exteriors</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog white grid-6 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/climalit-plus.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/climalit-plus.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          Climalit Plus
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/stadip-silence.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg-stapid-silence.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG STADIP SLIENCE
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/planistar-one.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_planistar_one.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PLANISTAR ONE
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/planitherm-4s.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_planitherm_4s.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PLANITHERM 4S
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/planitherm-xn.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg-plantherm-xn-y-xnii.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PLANITHERM XN I &amp; II
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-xtreme-7033.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg-cool-lite-xtreme-70-33-ii.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE XTREME 70/33
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-xtreme-5022.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/cool-lite-xtreme-5022.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE XTREME 50/22
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-xtreme-6028.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_cool-lite-xtreme-60-28.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE XTREME 60/28 II
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-skn-176.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg-cool-lite-skn-176-176ii.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE SKN 176/176 II
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-skn-144.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_cool-lite-skn-144-ii.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE SKN 144 II
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-sknII.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_cool_lite_skn_skn_ii.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE SKN I &amp; II
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-st.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_cool_lite_st-1.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE ST
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/cool-lite-k-sk.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg_cool-lite-k-y-sk-1.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE K SK
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/ext/sgg-cool-lite.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/ext/sgg-cool-lite.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet" style="margin-top: 15px;">
-                    <h6>Commercial Catalogs for Interiors</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog white grid-6 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="../docs/vidre/int/catlogo-profesional-miralite-natura.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/catlogo-profesional-miralite-natura.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG MIRALITE NATURA
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-miralite-revolution.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/miralite_revolution.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG MIRALITE REVOLUTION
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-mirastar.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/sgg_mirastar.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG MIRASTAR
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-priva-lite-1.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/sgg-priva-lite.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PRIVA-LITE
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-planilaque-stadip.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/planilaque_stapid.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PLANILAQUE STADIP
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-planilaque-evolution.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/planilaque_evolution.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PLANILAQUE EVOLUTION
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-master-soft-1.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/master_soft.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG MASTER-SOFT
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-decorglass-masterglass.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/decorglass_masterglass.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG MASTERGLASS &amp; DECORGLASS
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-picto.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/sgg_picto.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG PICTO
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/VisionLite.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/VisionLite-1.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG VISION-LITE
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/vidre/int/sgg-timeless.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/int/sgg_timeless.jpg"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG TIMELESS
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet" style="margin-top: 15px;">
-                    <h6>Technical Catalogs</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog grid-6 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="../docs/vidre/oth/tabla-cool-lite_f.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/oth/tabla-cool-lite_f-1.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-
-                      <li>
-                        <a
-                          href="../docs/vidre/oth/climalit-plus-ficha-skn-xtreme_f.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/oth/tabla-cool-lite-xtreme.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE SKN / XTREME
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-
-                      <li>
-                        <a
-                          href="../docs/vidre/oth/climalit-plus-ficha-st-stb_f.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/oth/climalit-plus-ficha-st-stb_f-1.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          SGG COOL-LITE ST
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-
-                      <li>
-                        <a
-                          href="../docs/vidre/oth/tablas-climalit-plus-confort-trmico_f.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/oth/tablas-climalit-plus-confort-trmico_f-1.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          Thermal Comfort
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-
-                      <li>
-                        <a
-                          href="../docs/vidre/oth/tablas-climalit-plus-confort-acstico_f.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/oth/tablas-climalit-plus-confort-acstico_f-1.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          Acoustinc Comfort
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-
-                      <li>
-                        <a
-                          href="../docs/vidre/oth/tablas-climalit-plus-seguridad_f.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/vidre/oth/tablas-climalit-plus-seguridad_f-1.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>
-                          Security
-                          <!--<small> &reg;</small>-->
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet" style="margin-top: 15px;">
-                    <h6>Tools of interest</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog white grid-5 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="https://es.saint-gobain-building-glass.com/es/app-db-station-simulador-acustico"
-                          target="_blank"
-                        >
-                          <img src="../images/logos/sg-dbstation.png" alt="" />
-                        </a>
-                        <p>
-                          <strong>SGG dBstation</strong>
-                          <!-- - Eina de càlcul de l'envidrament òptim segons contaminació acústica. -->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="https://es.saint-gobain-building-glass.com/es/apps-glass-compass"
-                          target="_blank"
-                        >
-                          <img src="../images/logos/sgg-compass.png" alt="" />
-                        </a>
-                        <p>
-                          <strong>SGG Compass Glass</strong>
-                          <!-- - Eina de càlcul de l'envidrament òptim segons ubicació i orientació. -->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="https://es.saint-gobain-building-glass.com/es/calcula-el-confort-de-la-ventana-con-caluwin"
-                          target="_blank"
-                        >
-                          <img src="../images/logos/caluwin.png" alt="" />
-                        </a>
-                        <p>
-                          <strong>Caluwin</strong>
-                          <!-- - Eina d'optimització i càlcul energètic. -->
-                        </p>
-                      </li>
-                      <li>
-                        <a
-                          href="https://es.saint-gobain-building-glass.com/es/caracterizacion-de-cualquier-tipo-de-vidrio"
-                          target="_blank"
-                        >
-                          <img src="../images/logos/calumenlive.png" alt="" />
-                        </a>
-                        <p>
-                          <strong>CalumenLive</strong>
-                          <!-- - Simulador de caracterització espectofotomètrica. -->
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="toggle toggle-border" data-animate="fadeInUp">
-              <div class="togglet">
-                <i class="toggle-closed icon-line-circle-plus"></i>
-                <i class="toggle-open icon-line-circle-cross"></i>
-                Aluminium Profiles and Accessories
-              </div>
-              <div class="togglec">
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet" style="margin-top: 15px;">
-                    <h6>Practicable Functionality</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog white grid-6 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/40CE.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/40CE.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>40CE</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/45CE.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/45CE.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>45CE</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/45COPLANAR.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/45COPLANAR.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>45 COPLANAR</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/45rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/45rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>45 TB</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/52rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/52rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>52 TB</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/61rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/61rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>61 TB</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/61rpt-c16.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/61rpt-c16.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>61 TB Canal16</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/65rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/65rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>65 TB</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/71rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/71rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>71 TB</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/71rpt-c16.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/71rpt-c16.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>71 TB Canal16</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/72rpt-HO.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/72rpt-HO.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>72 TB HO</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/batent/75rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/batent/75rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>75 TB</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet" style="margin-top: 15px;">
-                    <h6>Sliding Functionality</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog white grid-6 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="../docs/sistemes/corredissa/60cp.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/corredissa/60cp.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Perimetral60</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/corredissa/61rpt-evo.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/corredissa/61rpt-evo.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>61 TB EVO</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/corredissa/80rpt.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/corredissa/80rpt.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>80 TB</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/corredissa/128elv.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/corredissa/128elv.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>128 ELV</p>
-                      </li>
-                      <li>
-                        <a
-                          href="docs/sistemes/corredissa/160.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="images/catalegs/sistemes/corredissa/160.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>160 ELV</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="toggle"
-                  style="padding: 5px 0px 0px 0px !important;"
-                >
-                  <div class="togglet" style="margin-top: 15px;">
-                    <h6>Accessories and others</h6>
-                  </div>
-                  <div class="togglec">
-                    <ul
-                      class="clients-grid catalog white grid-6 nobottommargin clearfix"
-                    >
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/Umbra.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/Umbra.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>UMBRA</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/MallorquinaContraventana.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/MallorquinaContraventana.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Majorcan Shutter</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/Barandilla.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/Barandilla.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Railing</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/normalizadosyvarios.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/normalizadosyvarios.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Normalised and others</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/50-MC.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/50-MC.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Courtain Wall</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/AccesoriosComunes.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/AccesoriosComunes.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Accessories</p>
-                      </li>
-                      <li>
-                        <a
-                          href="../docs/sistemes/altres/VallaJardin.pdf"
-                          target="_blank"
-                        >
-                          <img
-                            src="../images/catalegs/sistemes/altres/VallaJardín.png"
-                            alt=""
-                          />
-                        </a>
-                        <p>Garden Fence</p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="toggle toggle-border" data-animate="fadeInUp">
-              <div class="togglet">
-                <i class="toggle-closed icon-line-circle-plus"></i>
-                <i class="toggle-open icon-line-circle-cross"></i>
-                Manufactured Window
-              </div>
-              <div class="togglec">
-                <h6 style="margin-top: 25px;">Comercial Catalogs</h6>
-                <ul class="clients-grid catalog grid-5 nobottommargin clearfix">
-                  <li>
-                    <a href="../docs/tancaments/cataleg-al.pdf" target="_blank">
-                      <img
-                        src="../images/catalegs/tancaments/cataleg-al.jpg"
-                        alt=""
-                      />
-                      <!-- <p>Tancament Fabricat d'Alumini <strong>PREMIUMline</strong></p> -->
+          <div class="container clearbix bottommargin-sm notopmargin">
+            <div class="container clearbix bottommargin-sm">
+              <div class="tabs tabs-alt clearfix" id="tab-2">
+                <ul class="tab-nav clearfix nav nav-fill">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#vidre" style="padding: 12px;">
+                      <div
+                        style="
+                          background: url('../images/vitral-vidre-logo.png')
+                            no-repeat center;
+                          background-size: contain;
+                          height: 100%;
+                          width: 100%;
+                        "
+                      ></div>
                     </a>
-                    <p>
-                      <strong>Aluminium</strong>
-                      Catalog
-                    </p>
                   </li>
-                  <li>
+                  <li class="nav-item">
                     <a
-                      href="../docs/tancaments/cataleg-pvc.PDF"
-                      target="_blank"
+                      class="nav-link"
+                      href="#edificacio"
+                      style="padding: 12px;"
                     >
-                      <img
-                        src="../images/catalegs/tancaments/cataleg-pvc.jpg"
-                        alt=""
-                      />
-                      <!-- <p>Tancament Fabricat de PVC <strong>REHAU</strong></p> -->
+                      <div
+                        style="
+                          background: url('../images/vitral-edificacio-logo.png')
+                            no-repeat center;
+                          background-size: contain;
+                          height: 100%;
+                          width: 100%;
+                        "
+                      ></div>
                     </a>
-                    <p>
-                      <strong>PVC</strong>
-                      Catalog
-                    </p>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#tancaments"
+                      style="padding: 12px;"
+                    >
+                      <div
+                        style="
+                          background: url('../images/vitral-tancaments-logo.png')
+                            no-repeat center;
+                          background-size: contain;
+                          height: 100%;
+                          width: 100%;
+                        "
+                      ></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#sistemes" style="padding: 12px;">
+                      <div
+                        style="
+                          background: url('../images/vitral-sistemes-logo.png')
+                            no-repeat center;
+                          background-size: contain;
+                          height: 100%;
+                          width: 100%;
+                        "
+                      ></div>
+                    </a>
                   </li>
                 </ul>
+
+                <div class="tab-container">
+                  <div class="tab-content clearfix" id="vidre">
+                    <div id="signin-form-vidre">
+                      <div class="col_one_third"></div>
+
+                      <div class="form-widget col_one_third mt-4 login-form">
+                        <div class="form-result"></div>
+
+                        <h5>Sign In</h5>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="text"
+                            id="loginform-user-vidre"
+                            name="user"
+                            value=""
+                            placeholder="Usuari"
+                            class="sm-form-control required"
+                          />
+                        </div>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="password"
+                            id="loginform-password-vidre"
+                            name="password"
+                            value=""
+                            placeholder="Contrassenya"
+                            class="required sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full hidden">
+                          <input
+                            type="text"
+                            id="loginform-botcheck-vidre"
+                            name="loginform-botcheck-vidre"
+                            value=""
+                            class="sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full">
+                          <button
+                            name="submit"
+                            type="button"
+                            id="submit-button"
+                            value="SIGN IN"
+                            onclick="processForm('vidre')"
+                            class="button button-3d nomargin center"
+                            style="background-color: #80bfe9;"
+                          >
+                            SIGN IN
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #80BFE9 -->
+
+                    <div
+                      id="catalogs-vidre"
+                      class="bottommargin-sm notopmargin"
+                      style="display: none;"
+                    >
+                      <div
+                        class="toggle show"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6 style="margin-top: 25px;">
+                            Commercial Catalogs for Façades and Exteriors
+                          </h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-6 nobottommargin clearfix"
+                          >
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/climalit-plus.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/climalit-plus.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Climalit Plus
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/stadip-silence.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg-stapid-silence.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG STADIP SLIENCE
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/planistar-one.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_planistar_one.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PLANISTAR ONE
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/planitherm-4s.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_planitherm_4s.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PLANITHERM 4S
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/planitherm-xn.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg-plantherm-xn-y-xnii.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PLANITHERM XN I &amp; II
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-xtreme-7033.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg-cool-lite-xtreme-70-33-ii.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE XTREME 70/33
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-xtreme-5022.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/cool-lite-xtreme-5022.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE XTREME 50/22
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-xtreme-6028.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_cool-lite-xtreme-60-28.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE XTREME 60/28 II
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-skn-176.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg-cool-lite-skn-176-176ii.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE SKN 176/176 II
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-skn-144.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_cool-lite-skn-144-ii.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE SKN 144 II
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-sknII.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_cool_lite_skn_skn_ii.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE SKN I &amp; II
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-st.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_cool_lite_st-1.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE ST
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/cool-lite-k-sk.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg_cool-lite-k-y-sk-1.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE K SK
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/ext/sgg-cool-lite.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/ext/sgg-cool-lite.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG COOL-LITE
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div
+                        class="toggle"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet" style="margin-top: 15px;">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6>Commercial Catalogs for Interiors</h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-6 nobottommargin clearfix"
+                          >
+                            <!-- <li><a href="../docs/vidre/int/.pdf" target="_blank"> <img
+                                      src="../images/catalegs/vidre/int/miralite.jpg" alt="">
+                                  </a>
+                                  <p>SGG MIRALITE NATURA
+                                  </p>
+                                </li> -->
+                            <li>
+                              <a
+                                href="../docs/vidre/int/catlogo-profesional-miralite-natura.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/catlogo-profesional-miralite-natura.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG MIRALITE NATURA
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-miralite-revolution.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/miralite_revolution.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG MIRALITE REVOLUTION
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-mirastar.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/sgg_mirastar.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG MIRASTAR
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-priva-lite-1.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/sgg-priva-lite.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PRIVA-LITE
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-planilaque-stadip.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/planilaque_stapid.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PLANILAQUE STADIP
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-planilaque-evolution.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/planilaque_evolution.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PLANILAQUE EVOLUTION
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-master-soft-1.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/master_soft.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG MASTER-SOFT
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-decorglass-masterglass.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/decorglass_masterglass.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG MASTERGLASS &amp; DECORGLASS
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-picto.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/sgg_picto.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG PICTO
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/VisionLite.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/VisionLite-1.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG VISION-LITE
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/vidre/int/sgg-timeless.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/int/sgg_timeless.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                SGG TIMELESS
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                            <!-- <li><a href="../docs/vidre/int/.pdf" target="_blank"> <img
+                                      src="../images/catalegs/vidre/int/sgg_soluciones_en_vidrio.jpg" alt="">
+                                  </a>
+                                  <p>SOLUCIONES EN VIDRIO
+                                  </p>
+                                </li> -->
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div
+                        class="toggle"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet" style="margin-top: 15px;">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6>Technical Catalogs</h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-6 nobottommargin clearfix"
+                          >
+                            <li>
+                              <a
+                                href="../docs/vidre/oth/tabla-cool-lite_f.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/oth/tabla-cool-lite_f-1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Service Charter - SGG COOL-LITE
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+
+                            <li>
+                              <a
+                                href="../docs/vidre/oth/climalit-plus-ficha-skn-xtreme_f.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/oth/tabla-cool-lite-xtreme.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Service Charter - SGG COOL-LITE SKN / XTREME
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+
+                            <li>
+                              <a
+                                href="../docs/vidre/oth/climalit-plus-ficha-st-stb_f.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/oth/climalit-plus-ficha-st-stb_f-1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Service Charter - SGG COOL-LITE ST
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+
+                            <li>
+                              <a
+                                href="../docs/vidre/oth/tablas-climalit-plus-confort-trmico_f.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/oth/tablas-climalit-plus-confort-trmico_f-1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Solutions Table - Comfort Térmico
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+
+                            <li>
+                              <a
+                                href="../docs/vidre/oth/tablas-climalit-plus-confort-acstico_f.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/oth/tablas-climalit-plus-confort-acstico_f-1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Solutions Table - Comfort Acústico
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+
+                            <li>
+                              <a
+                                href="../docs/vidre/oth/tablas-climalit-plus-seguridad_f.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/vidre/oth/tablas-climalit-plus-seguridad_f-1.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                Solutions Table - Seguridad
+                                <!--<small> &reg;</small>-->
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div
+                        class="toggle"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet" style="margin-top: 15px;">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6>Tools of Interest</h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-5 nobottommargin clearfix"
+                          >
+                            <li>
+                              <a
+                                href="https://es.saint-gobain-building-glass.com/es/app-db-station-simulador-acustico"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/logos/sg-dbstation.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                <strong>SGG dBstation</strong>
+                                <!-- - Eina de càlcul de l'envidrament òptim segons contaminació acústica. -->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="https://es.saint-gobain-building-glass.com/es/apps-glass-compass"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/logos/sgg-compass.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                <strong>SGG Compass Glass</strong>
+                                <!-- - Eina de càlcul de l'envidrament òptim segons ubicació i orientació. -->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="https://es.saint-gobain-building-glass.com/es/calcula-el-confort-de-la-ventana-con-caluwin"
+                                target="_blank"
+                              >
+                                <img src="../images/logos/caluwin.png" alt="" />
+                              </a>
+                              <p>
+                                <strong>Caluwin</strong>
+                                <!-- - Eina d'optimització i càlcul energètic. -->
+                              </p>
+                            </li>
+                            <li>
+                              <a
+                                href="https://es.saint-gobain-building-glass.com/es/caracterizacion-de-cualquier-tipo-de-vidrio"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/logos/calumenlive.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>
+                                <strong>CalumenLive</strong>
+                                <!-- - Simulador de caracterització espectofotomètrica. -->
+                              </p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-content clearfix" id="edificacio">
+                    <div id="signin-form-edificacio">
+                      <div class="col_one_third"></div>
+
+                      <div class="form-widget col_one_third mt-4 login-form">
+                        <div class="form-result"></div>
+
+                        <h5>Sign In</h5>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="text"
+                            id="loginform-user-edificacio"
+                            name="user"
+                            value=""
+                            placeholder="Usuari"
+                            class="sm-form-control required"
+                          />
+                        </div>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="password"
+                            id="loginform-password-edificacio"
+                            name="password"
+                            value=""
+                            placeholder="Contrassenya"
+                            class="required sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full hidden">
+                          <input
+                            type="text"
+                            id="loginform-botcheck-edificacio"
+                            name="loginform-botcheck-edificacio"
+                            value=""
+                            class="sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full">
+                          <button
+                            name="submit"
+                            type="button"
+                            id="submit-button"
+                            value="SIGN IN"
+                            onclick="processForm('edificacio')"
+                            class="button button-3d nomargin center"
+                            style="background-color: #6fa189;"
+                          >
+                            SIGN IN
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #80BFE9 -->
+
+                    <div
+                      id="catalogs-edificacio"
+                      class="bottommargin-sm notopmargin"
+                      style="display: none;"
+                    ></div>
+                  </div>
+
+                  <div class="tab-content clearfix" id="tancaments">
+                    <div id="signin-form-tancaments">
+                      <div class="col_one_third"></div>
+
+                      <div class="form-widget col_one_third mt-4 login-form">
+                        <div class="form-result"></div>
+
+                        <h5>Sign In</h5>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="text"
+                            id="loginform-user-tancaments"
+                            name="user"
+                            value=""
+                            placeholder="Usuari"
+                            class="sm-form-control required"
+                          />
+                        </div>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="password"
+                            id="loginform-password-tancaments"
+                            name="password"
+                            value=""
+                            placeholder="Contrassenya"
+                            class="required sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full hidden">
+                          <input
+                            type="text"
+                            id="loginform-botcheck-tancaments"
+                            name="loginform-botcheck-tancaments"
+                            value=""
+                            class="sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full">
+                          <button
+                            name="submit"
+                            type="button"
+                            id="submit-button"
+                            value="SIGN IN"
+                            onclick="processForm('tancaments')"
+                            class="button button-3d nomargin center"
+                            style="background-color: #537d94;"
+                          >
+                            SIGN IN
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #80BFE9 -->
+
+                    <div
+                      id="catalogs-tancaments"
+                      class="bottommargin-sm notopmargin"
+                      style="display: none;"
+                    >
+                      <div class="toggle">
+                        <div class="togglet">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6 style="margin-top: 25px;">
+                            Commercial Catalogs
+                          </h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-4 nobottommargin clearfix"
+                          >
+                            <li>
+                              <a
+                                href="../docs/tancaments/CatalogoVitralTancaments_es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/tancaments/portada_cataleg_tancaments.png"
+                                  alt=""
+                                />
+                              </a>
+                              <p>Vitral Tancaments Catalog</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-content clearfix" id="sistemes">
+                    <div id="signin-form-sistemes">
+                      <div class="col_one_third"></div>
+
+                      <div class="form-widget col_one_third mt-4 login-form">
+                        <div class="form-result"></div>
+
+                        <h5>Sign In</h5>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="text"
+                            id="loginform-user-sistemes"
+                            name="user"
+                            value=""
+                            placeholder="Usuari"
+                            class="sm-form-control required"
+                          />
+                        </div>
+
+                        <div class="col_full bottommargin-sm">
+                          <input
+                            type="password"
+                            id="loginform-password-sistemes"
+                            name="password"
+                            value=""
+                            placeholder="Contrassenya"
+                            class="required sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full hidden">
+                          <input
+                            type="text"
+                            id="loginform-botcheck-sistemes"
+                            name="loginform-botcheck-sistemes"
+                            value=""
+                            class="sm-form-control"
+                          />
+                        </div>
+
+                        <div class="col_full">
+                          <button
+                            name="submit"
+                            type="button"
+                            id="submit-button"
+                            value="SIGN IN"
+                            onclick="processForm('sistemes')"
+                            class="button button-3d nomargin center"
+                            style="background-color: #a3aaae;"
+                          >
+                            SIGN IN
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- #80BFE9 -->
+
+                    <div
+                      id="catalogs-sistemes"
+                      class="bottommargin-sm notopmargin"
+                      style="display: none;"
+                    >
+                      <div
+                        class="toggle"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet" style="margin-top: 15px;">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6 style="margin-top: 25px;">
+                            Practicable functionality
+                          </h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-4 nobottommargin clearfix"
+                          >
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-75-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/1_3D Escuadra IT-75 RPT_V.JPG"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V PRACTICABLE 75 RPT</p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-72fo-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/2_3D_Escuadra IT-72HO RPT_V.JPG"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V PRACTICABLE 72FO RPT</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/3_3D_Escuadra IT-72HO RPT_C16_V.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 72F RPT C-16</p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-71-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/4_3D_Escuadra IT-71 RPT_V.JPG"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V PRACTICABLE 71 RPT</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/5_3D_Escuadra IT-71 RPT_C16_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 71 RPT C-16</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/6_3D Escuadra IT-65 RPT_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 65 RPT</p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-61-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/7_3D Escuadra IT-61 RPT_v.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V PRACTICABLE 61 RPT</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/8_3D_Escuadra_IT-61_RPT_C16_V.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 61 RPT C-16</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/9_3D_Escuadra IT-45 RPT_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 45 RPT</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/10_3D_Escuadra IT-45 CE_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 45 CE</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/11_3D_Escuadra IT-40 CE_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V PRACTICABLE 40 CE</p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-75-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/12_3D Escuadra Coplanar IT-75 RPT_VD_VT_V.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V COPLANAR 75 RPT</p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-co-75-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/13_3D Escuadra Coplanar IT-45_V.JPG"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V COPLANAR 45</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div
+                        class="toggle"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet" style="margin-top: 15px;">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6>Sliding functionality</h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-4 nobottommargin clearfix"
+                          >
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-160-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/14_3D_Escuadra IT-160-ELV RPT_V.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V ELEVABLE 160 RPT</p>
+                            </li>
+                            <li>
+                              <a
+                                href="../docs/sistemes/v-evo-61-rpt-es.pdf"
+                                target="_blank"
+                              >
+                                <img
+                                  src="../images/catalegs/sistemes/15_3D_Escuadra IT-61CR RPT_Corte Recto_V.jpg"
+                                  alt=""
+                                />
+                              </a>
+                              <p>V EVOLUTION 61 RPT - GALANDAGE CORTE RECTO</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/15_3D_Escuadra IT-61CR RPT_Perimetral_V.jpg"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V EVOLUTION 61 RPT - GALANDAGE</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div
+                        class="toggle"
+                        style="padding: 5px 0px 0px 0px !important;"
+                      >
+                        <div class="togglet" style="margin-top: 15px;">
+                          <i class="toggle-closed icon-line-circle-plus"></i>
+                          <i class="toggle-open icon-line-circle-cross"></i>
+                          <h6>Accessories and Miscellaneous</h6>
+                        </div>
+                        <div class="togglec">
+                          <ul
+                            class="clients-grid catalog white grid-4 nobottommargin clearfix"
+                          >
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/16_3D Mallorquina Umbra Plegable_LM_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>V SISTEMA UMBRA</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/17_3D_Mallorquina CE_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>MALLORQUINA CE CONTRAVENTANA</p>
+                            </li>
+                            <li>
+                              <div>
+                                <img
+                                  src="../images/catalegs/sistemes/18_3D Barandilla GLASS_V.JPG"
+                                  alt=""
+                                />
+                              </div>
+                              <p>BARANDILLA</p>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1409,7 +1584,7 @@
             ============================================= -->
         <div id="copyrights">
           <div class="container clearfix">
-            <div class="col_half">
+            <div class="col_two_third">
               <div class="copyrights-menu copyright-links clearfix">
                 <a href="index.html">Home</a>
                 /
@@ -1429,7 +1604,7 @@
               </div>
             </div>
 
-            <div class="col_half col_last tright">
+            <div class="col_one_third col_last tright">
               <div class="fright clearfix">
                 <a
                   href="https://www.facebook.com/vitralgrup/"
@@ -1478,26 +1653,22 @@
     <script src="../js/functions.js"></script>
 
     <script>
-      function processForm() {
+      function processForm(type) {
         var usr, pw
 
-        usr = document.getElementById('loginform-user').value
-        pw = document.getElementById('loginform-password').value
+        console.log(type)
+        console.log('loginform-user' + '-' + type)
 
-        if (usr == 'vitral' && pw == 'vitral') {
-          document.getElementById('signin-form').style.display = 'none'
-          document.getElementById('catalogs').style.display = 'block'
+        usr = document.getElementById('loginform-user' + '-' + type).value
+        pw = document.getElementById('loginform-password' + '-' + type).value
+
+        if (usr == 'vitral' && pw == type) {
+          document.getElementById('signin-form' + '-' + type).style.display =
+            'none'
+          document.getElementById('catalogs' + '-' + type).style.display =
+            'block'
         } else {
           alert('Usuari o contrassenya incorrectes')
-        }
-      }
-
-      function checkForm(form) {
-        if (form.user.value == 'vitral' && form.password.value == 'vitral') {
-          return true
-        } else {
-          alert('Usuari o contrassenya incorrectes!')
-          return false
         }
       }
     </script>

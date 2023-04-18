@@ -30,24 +30,80 @@
     <link rel="stylesheet" href="../css/responsive.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-
+   
     <!-- Document Title
-	============================================= -->
-    <title>Vitral Grup | Company</title>
-    <style>
-        .slider-caption-bg {
-            left: 20px;
-            bottom: 20px;
+    ============================================= -->
+    <title>Vitral Grup | What we do?</title>
+    <style type="text/css">
+        body {
+            overflow-x: hidden;
+        }
+
+        .toggle {
+            margin-bottom: 5px;
+        }
+
+        .togglet.image-togglet {
+            height: 80px;
+            color: white;
+            font-size: 22px;
+            font-weight: 500;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 80px;
+            box-shadow: 3px 1px 5px rgba(0, 0, 0, 0.15);
+            padding: 0;
+
+            /* The image used */
+            background-image: url("../images/footer-bg.jpg");
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .dark-bg {
+            background-color: rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        .dark-bg:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+
+        .pic-activities {
+            margin: 0 0 20px 0;
+        }
+
+        @media screen and (max-width: 840px) {
+
+            .pic-activities {
+                width: 100%;
+                max-height: auto;
+                float: left !important;
+                display: block;
+                margin: 0 0 15px 0 !important;
+                padding: 0;
+                padding: 0 20px;
+            }
         }
     </style>
 
+
+
 </head>
 
-<body class="stretched" onload="startGame()">
-
+<body class="stretched">
 
     <!-- Document Wrapper
-	============================================= -->
+    ============================================= -->
     <div id="wrapper" class="clearfix">
 
         <!-- Top Bar
@@ -84,11 +140,11 @@
                         <ul>
                             <li><a href="#"><img src="../images/en.png" alt=""> <span id="language-name">ENGLISH</span></a>
                                 <ul>
-                                    <li><a href="../fr/empresa.html"><img src="../images/fr.png" alt="">
+                                    <li><a href="../fr/empreses.html"><img src="../images/fr.png" alt="">
                                             FRANÇAIS</a></li>
-                                    <li><a href="../empresa.html"><img src="../images/ca.png">
+                                    <li><a href="../empreses.html"><img src="../images/ca.png">
                                             CATALÀ</a></li>
-                                    <li><a href="../es/empresa.html"><img src="../images/es.png">
+                                    <li><a href="../es/empreses.html"><img src="../images/es.png">
                                             CASTELLANO</a></li>
                                 </ul>
                             </li>
@@ -155,11 +211,11 @@
                                     <div>Home</div>
                                 </a>
                             </li>
-                            <li ><a href="elgrup.html">
+                            <li class="current"><a href="#">
                                     <div>The Group</div>
                                 </a>
                             </li>
-                            <li class="current"><a href="#">
+                            <li><a href="empreses.html">
                                     <div>Companies</div>
                                 </a>
                             </li>
@@ -184,285 +240,331 @@
 
         </header><!-- #header end -->
 
-
-       
-        <!-- Page Title
-        ============================================= -->
-        <section id="page-title" class="page-title-parallax page-title-dark"
-            style="background-image: url('../images/all/e5b_.jpg'); padding: 100px 0; background-size: cover;"
-            data-center="background-position: 0px 0px;" data-top-bottom="background-position: 0px 0px;">
-
-            <div class="container clearfix">
-                <h1>COMPANY</h1>
-                <span>Quality · Service · Sustainability</span>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Company</li>
-                </ol>
-            </div>
-
-        </section><!-- #page-title end -->
-
         <!-- Content
         ============================================= -->
-        <section> <div id="content">
 
-            <div class="content-wrap">
+        <section>
+			<div class="content-wrap" style="padding-top: 60px;">
 
-                <div id="empresa" class="container clearfix">
+				<div class="container clearbix bottommargin-sm">
 
-                    <div class="row clearfix">
-                        <div class="col-lg-6" data-animate="fadeIn">
-                            <div class="heading-block nobottomborder bottommargin-sm">
-                                <h4 class="t500">Vitral Grup</h4>
-                                <span>Professional manufacturers of building glass and Aluminum & PVC enclosures.</span>
-                            </div>
-                            <p style="text-align: justify;">We are a family business founded in 1962 dedicated to the manufacture and distribution of flat glass. In the 70's we introduced the manufacture and commercialization of aluminum carpentry and, since the last decade, we incorporated into our activity a new line of PVC enclosures.
-                                <br><br>
-                                At Vitral Grup we respond to the technical, aesthetic, architectural and regulatory requirements in the construction sector, evolving according to the most state of the art trends. Our work is strengthened by a close human service, comprised of a team of professionals and experts, technically prepared and passionate about their work. These values, along with the social and environmental commitments we have maintained since the beginning, have allowed us to grow step by step, with rigor and prudence as professionals within the sector.<br><br>
+					<div class="tabs tabs-alt clearfix" id="tab-2">
 
-                                To develop our projects, we dispose of a glass manufacturing plant, an aluminum and PVC closures production plant and a aluminium profiles and accessories warehouse. In total, more than 16,000 square meters of industrial surface located in the industrial area of “La Nora d'Alcoletge”, in the province of Lleida.
-                                <br><br>
+						<ul class="tab-nav clearfix nav nav-fill">
+							
+							<li class="nav-item"><a class="nav-link" href="#vidre" style="padding:14px;"><div style=" background: url('../images/vitral-vidre-logo.png') no-repeat center; background-size: contain;  height: 100%; width: 100%;">
+							</div></a></li>
+							<li class="nav-item"><a class="nav-link" href="#edificacio" style="padding: 12px;"><div style="background: url('../images/vitral-edificacio-logo.png') no-repeat center; background-size: contain; height: 100%; width: 100%;">
+							</div></a></li>
+							<li class="nav-item"><a class="nav-link" href="#tancaments" style="padding: 12px;"><div style="background: url('../images/vitral-tancaments-logo.png') no-repeat center; background-size: contain; height: 100%; width: 100%;">
+							</div></a></li>
+							<li class="nav-item"><a class="nav-link" href="#sistemes" style="padding: 12px;"><div style="background: url('../images/vitral-sistemes-logo.png') no-repeat center; background-size: contain; height: 100%; width: 100%;">
+							</div></a></li>
+						</ul>
 
-                                From our group of companies we promote a future project that would not be possible without an expertly trained human team,  technically prepared, passionate about their work and ready to innovate & research in order to be able to offer our client and to the society as a whole a reality: moving forward, growing and evolving to achieve a common goal: to be better at what matters.
-                            </p>
+						<div class="tab-container" style="padding: 15px;">
 
-                        </div>
+							<div class="tab-content clearfix" id="vidre">
+								<div class="row p-4">
+									<div class="col-sm-12 col-lg-12">
+										<p>From Vitral Vidre we offer the best glazing solutions to the current needs of the construction sector, both in the residential field, as well as in rehabilitation, commercial or industrial.</p>
+										<p>Our main activities are:</p>
+                                        <ul style="list-style: disc; padding-left: 20px">
+                                            <li>Cutting and manufacturing of large monolithic and laminated glass.</li>
+                                            <li>Manufacture of Double and Triple Insulating Glass under the brands
+                                                <a target="_blank" href="https://climalit.es/">
+                                                    SGG CLIMALIT
+                                                </a> and <a target="_blank" href="https://climalit.es/climalit-plus/">
+                                                    SGG CLIMALIT PLUS
+                                                </a>
+                                            </li>
+                                            <li>Laminated Glass</li>
+                                            <li>Tempered Glass</li>
+                                            <li>Curved Glass</li>
+                                            <li>Fireproof Glass</li>
+                                        </ul>
+									</div>
+									
+								</div>
+								
+								<div class="row p-4">
+									<div class="col-sm-12 col-lg-12">
+										
+										<p>Some of the products we offer:</p>
+										<ul style="list-style: none; padding-left: 6px;">
+											<li style="margin-top: 5px;"><strong>Safety Glass</strong> - <a target="_blank"
+													href="https://mx.saint-gobain-glass.com/es-MX/sgg-stadip">SGG
+													STADIP</a></li>
+											<li style="margin-top: 5px;"><strong>Acoustic Glass</strong> - <a
+													href="https://es.saint-gobain-building-glass.com/es/sgg-stadip-silence">SGG
+													STADIP SILENCE</a></li>
+											<li style="margin-top: 5px;"><strong>Thermal Insulation Glass</strong> - <a
+													target="_blank" href="https://climalit.es/">SGG
+													CLIMALIT</a> · <a target="_blank" href="https://climalit.es/climalit-plus/">SGG
+													CLIMALIT
+													PLUS</a target="_blank"></li>
+											<li style="margin-top: 5px;"><strong>Low E glass</strong> - <a target="_blank"
+													href="https://es.saint-gobain-building-glass.com/es/sgg-planitherm-xnxn-ii">SGG
+													PLANITHERM XN</a></li>
+											<li style="margin-top: 5px;"><strong>Solar Control Glass</strong> - <a
+													target="_blank"
+													href="https://es.saint-gobain-building-glass.com/es/sgg-cool-lite">SGG
+													PLANITHERM COOL-LITE</a></li>
+											<li style="margin-top: 5px;"><strong>Selective Glass</strong> - <a target="_blank"
+													href="https://es.saint-gobain-building-glass.com/es/sgg-planitherm-4s">SGG
+													PLANITHERM 4S</a> · <a target="_blank"
+													href="https://es.saint-gobain-building-glass.com/es/sgg-planistar-one">SGG
+													PLANISTAR ONE</a> · <a target="_blank"
+													href="https://mx.saint-gobain-glass.com/es-MX/sgg-cool-lite-xtreme">SGG
+													COOL-LITE XTREME</a> · <a target="_blank"
+													href="https://es.saint-gobain-building-glass.com/es/sgg-cool-lite-skn">SGG
+													COOL-LITE SKN</a></li>
+		
+										</ul>
+									</div>
 
-                        <!-- Portfolio Single Gallery Thumbs
-                    ============================================= -->
-                        <div class="col-lg-6 portfolio-single-image topmargin nobottommargin"
-                            data-animate="fadeInRight">
-                            <div class="masonry-thumbs grid-3" data-big="3" data-lightbox="gallery">
-                                <a href="../images/all/1992-5.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/1992-5.jpg" alt="Gallery Thumb 1"></a>
-                                <a href="../images/all/2004-6.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/2004-6.jpg" alt="Gallery Thumb 2"></a>
-                                <a href="../images/all/2004-4.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/2004-4.jpg" alt="Gallery Thumb 3"></a>
-                                <a href="../images/all/1992-4.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/1992-4.jpg" alt="Gallery Thumb 4"></a>
-                                <a href="../images/all/2004-3.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/2004-3.jpg" alt="Gallery Thumb 5"></a>
-                                <a href="../images/all/2004-2.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/2004-2.jpg" alt="Gallery Thumb 6"></a>
-                                <a href="../images/all/2004-1.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/2004-1.jpg" alt="Gallery Thumb 7"></a>
-                                <a href="../images/all/1992-2.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/1992-2.jpg" alt="Gallery Thumb 8"></a>
-                                <a href="../images/all/1992-3.jpg" data-lightbox="gallery-item"><img class="image_fade"
-                                        src="../images/all/1992-3.jpg" alt="Gallery Thumb 9"></a>
-                            </div>
-                        </div><!-- .portfolio-single-image end -->
-                    </div>
-                </div>
+									
+								</div>
+							</div>
 
-                <div class="clear"></div>
+							<div class="tab-content clearfix" id="edificacio">
+								<div class="row p-4">
+									<div class="col-sm-12 col-lg-12">
+										<p>The management of construction projects consists of the definition and determination of the documentation and planning of the technical requirements and the characteristics of the work to be executed.<br>This planning is the basis on which the daily work of site technicians and is divided into:</p>
+										<ul style="list-style: disc;padding-left: 20px">
+											<li>Project <strong>study</strong> and <strong>analysis</strong></li>
+                                            <li><strong>Budget</strong> preparation</li>
+                                            <li>Documentation and work <strong>planning</strong></li>
+                                            <li><strong>Manufacturing</strong></li>
+                                            <li><strong>Installation</strong></li>
+										</ul>
+										<p>At Vitral Edificació we carry out projects for new construction, rehabilitation, public works, office spaces, industrial buildings and commercial buildings. <br> <br>
+											
+										</p>
+										<div class="row" style="background-color: #6ea08985; padding-top: 30px;  ">
+											<div class="col-sm-10 col-md-8 col-lg-4" style="margin: auto" style="text-align: center;">
+												
+												<p>
+													<a  href="projectes.html" target="_blank">
+														<img src="../images/projectesgrid.png" alt="">
+													</a>
+												</p>
+												<p style=" text-align: center;">
+													<a href="projectes.html" style="color: white;">SEE PORTFOLIO
+													</a>
+												</p>
+											</div>
+									</div>
 
-                <div id="partners" class="container clearfix topmargin">
+									</div>
+								
+								</div>
+							</div>
+							
+							<div class="tab-content clearfix "  id="tancaments">
+								<div class="row" >
+									<div class="col-sm-12 col-lg-12">
+										<div class="row p-4" style="padding-bottom: 0px !important;">
+											<p style="text-align: justify">
+												At Vitral Tancaments we respond to the current needs for building envelopes, both functional, insulating and environmental.
+                                                For this reason, through the VIT LINE initiative, we have our products constantly evolving to adapt to new market trends. We focus on reducing energy consumption and acoustic attenuation, using 100% recyclable materials, on comfort,
+                                                safety and innovation and in offering designs and finishes for all styles with a wide range of products.
+                                                <br>
+                                                <br>
+                                                See our product catalogue:
+											</p>
+										</div>
+										<div class="row" style="background-color: #4d738a85; padding-top: 30px;">
+												<div class="col-sm-10 col-md-8 col-lg-4" style=" margin: auto; text-align: center;">
+													<div  style=" margin: auto;">
+														<a  href="../docs/tancaments/CatalogoVitralTancaments_es.pdf" target="_blank">
+															<img src="../images/catalegs/tancaments/portada_cataleg_tancaments.png" alt="">
+														</a>
+														<p style="color: white; text-align: center;  padding-top: 20px;">
+															WINDOWS AND ENCLOSURES CATALOG<br>ALUMINUM · PVC
+														</p>
+													</div>
+												</div>
+										</div>
+										<div class="row p-4">
+											<div class="col-sm-12 col-lg-12" >
+												<p style="text-align: justify">
+													<span>PROFESSIONALS</span>
+													<br>
+													<br>
+													Soon, we will put at your disposal a showroom so that you can visit it together with the
+their clients and construction professionals.
+												</p>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
 
+							<div class="tab-content clearfix" id="sistemes">
+								<div class="row p-4">
+									<div class="col-sm-12 col-lg-12">
+                                        <p>Vitral Sistemes has a warehouse of <strong>aluminum systems</strong> and <strong>accessories</strong> to provide service to <strong>professional manufacturers of enclosures</strong> both in terms of products and technical advice. We maintain a wide range of constantly evolving products to stay up-to-date with the needs of our clients and market demands while always guaranteeing the best quality. Our product offerings include:</p>
+										<ul class="clients-grid catalog white grid-4 nobottommargin clearfix">
+											<li>
+												<img src="../images/catalegs/sistemes/1_3D Escuadra IT-75 RPT_V.JPG" alt="">
+												<p>V PRACTICABLE 75 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/2_3D_Escuadra IT-72HO RPT_V.JPG" alt="">
+												<p>V PRACTICABLE 72FO RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/3_3D_Escuadra IT-72HO RPT_C16_V.jpg" alt="">
+												<p>V PRACTICABLE 72F RPT C-16</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/4_3D_Escuadra IT-71 RPT_V.JPG" alt="">
+												<p>V PRACTICABLE 71 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/5_3D_Escuadra IT-71 RPT_C16_V.JPG" alt="">
+												<p>V PRACTICABLE 71 RPT C-16</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/6_3D Escuadra IT-65 RPT_V.JPG" alt="">
+												<p>V PRACTICABLE 65 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/7_3D Escuadra IT-61 RPT_v.jpg" alt="">
+												<p>V PRACTICABLE 61 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/8_3D_Escuadra_IT-61_RPT_C16_V.jpg" alt="">
+												<p>V PRACTICABLE 61 RPT C-16</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/9_3D_Escuadra IT-45 RPT_V.JPG" alt="">
+												<p>V PRACTICABLE 45 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/10_3D_Escuadra IT-45 CE_V.JPG" alt="">
+												<p>V PRACTICABLE 45 CE</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/11_3D_Escuadra IT-40 CE_V.JPG" alt="">
+												<p>V PRACTICABLE 40 CE</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/12_3D Escuadra Coplanar IT-75 RPT_VD_VT_V.jpg" alt="">
+												<p>V COPLANAR 75 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/13_3D Escuadra Coplanar IT-45_V.JPG" alt="">
+												<p>V COPLANAR 45</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/14_3D_Escuadra IT-160-ELV RPT_V.jpg" alt="">
+												<p>V ELEVABLE 160 RPT</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/15_3D_Escuadra IT-61CR RPT_Corte Recto_V.jpg" alt="">
+												<p>V EVOLUTION 61 RPT - GALANDAGE TALL RECTE</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/15_3D_Escuadra IT-61CR RPT_Perimetral_V.jpg" alt="">
+												<p>V EVOLUTION 61 RPT - GALANDAGE </p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/16_3D Mallorquina Umbra Plegable_LM_V.JPG" alt="">
+												<p>V SISTEMA UMBRA</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/17_3D_Mallorquina CE_V.JPG" alt="">
+												<p>MALLORQUINA CE CONTRAFINESTRA</p>
+											</li>
+											<li>
+												<img src="../images/catalegs/sistemes/18_3D Barandilla GLASS_V.JPG" alt="">
+												<p>BARANDILLA</p>
+											</li>
 
-                    <div class="divider divider-center divider-border" data-animate="fadeIn"><i
-                            class="icon-line-minus"></i></div>
+																				
+										</ul>
+										<ul style="list-style: none; padding-left: 0px">
+											<!-- <li><span><strong>Sistemes</strong></span>
+												<ul style="list-style: disc; padding-left: 20px">
+													<li>V PRACTICABLE 75 RPT</li>
+													<li>V PRACTICABLE 72FO RPT</li>
+													<li>V PRACTICABLE 72FO RPT C-16</li>
+													<li>V PRACTICABLE 71 RPT</li>
+													<li>V PRACTICABLE 71 RPT C-16</li>
+													<li>V PRACTICABLE 65 RPT</li>
+													<li>V PRACTICABLE 61 RPT</li>
+													<li>V PRACTICABLE 61 RPT C-16</li>
+													<li>V PRACTICABLE 45 RPT</li>
+													<li>V PRACTICABLE 45 CE</li>
+													<li>V PRACTICABLE 40 CE</li>
+													<li>V COPLANAR 75 RPT</li>
+													<li>V COPLANAR 45</li>
+													<li>V ELEVABLE 160 RPT</li>
+													<li>V EVOLUTION 61 RPT - GALANDAGE</li>
+													<li>V SISTEMA UMBRA</li>
+													<li>MALLORQUINA CE CONTRAFINESTRA</li>
+													<li>BARANA + MINI GLASS + GLASS TOP</li>
+													<li>NORMLAITZATS I VARIS</li>
+													<li>VALLA JARDI</li>
+												</ul>
+											</li> -->
+											<li style="margin-top: 10px;">
+												<span><strong>Accesories</strong></span>
+												<ul style="list-style: disc; padding-left: 20px">
+													<li>Canal europeo</li>
+													<li>Canal 16</li>
+													<li>Hidden hinge system</li>
+												</ul>
+											</li>
+											<li style="margin-top: 10px;">
+												<span><strong>Finishing</strong></span>
+												<ul style="list-style: disc; padding-left: 20px">
+													<li>Anodized</li>
+                                                    <li>Lacquered</li>
+                                                    <li>Wooden lacquers</li>
+                                                    <li>Two-color combination</li>
+												</ul>
+											</li>
+										</ul>
+										<p>We also provide <strong>computer tools</strong> for managing manufacturing processes such as calculating <strong>material requirements</strong>, managing production and manufacturing <strong>orders</strong>, and calculating <strong>orders</strong> and <strong>budgets</strong>.
+										</p>
+										
+										<p style="text-align: justify">
+											<span>PROFESSIONALS</span>
+											<br>
+											<br>
+											Soon, we will make available to you a showroom so that you can visit it with your clients and construction professionals.
+										</p>
+										<div class="row clearfix bottommargin-sm " data-animate="fadeIn">
 
-                    <div class="row clearfix">
+											<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+												<div class="flip-card text-center" >
+													<div class="flip-card-front no-after " 
+														style="background-image: url('../images/all/vvisualcat.png'); border: 1px solid #ccc;  height: 100%;">
+													</div>
+													<div class="flip-card-back no-after" 
+													style="background-image: url('../images/all/vvisuales.png'); border: 1px solid #ccc; height: 100%;">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
 
-                        <div class="col-lg-12">
-                            <div class="heading-block center">
-                                <h4 class="t500">Contributors and suppliers</h4>
-                                <span class="ls0" style="font-size: 16px;" data-animate="fadeIn">At Vitral Grup we work and collaborate with companies and organizations to create an exemplary industrial sector. We strive to promote and create quality standards that can meet eye to eye the highest architectural and environmental requirements. We hereby invite you to join us!</span>
-                            </div>
-                            <ul class="clients-grid grid-6 nobottommargin clearfix" data-animate="fadeIn">
-                                <li><a href="https://es.saint-gobain-building-glass.com/es" target="_blank"><img
-                                            src="../images/logos/saintgobain.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="http://www.fadasa.es" target="_blank"><img src="../images/logos/fadasa.png"
-                                            alt="Clients"></a>
-                                </li>
-                                <li><a href="http://www.itesal.es/" target="_blank"><img
-                                            src="../images/logos/itesal.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="https://www.rehau.com/es-es" target="_blank"><img
-                                            src="../images/logos/rehau.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="https://www.technal.com/es/es/profesional/" target="_blank"><img
-                                            src="../images/logos/technal_.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="https://www.g-u.com/" target="_blank"><img src="../images/logos/gu.png"
-                                            alt="Clients"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+						</div>
 
-                <div id="brands" class="container clearfix topmargin">
+					</div>
 
-                    <div class="divider divider-center divider-border"><i class="icon-line-minus"></i></div>
+					
+				</div>
+			</div>
 
-                    <div class="row clearfix">
-
-                        <div class="col-lg-12">
-                            <div class="heading-block center">
-                                <h4 class="t500">Licenses and Brands</h4>
-                                <span class="ls0" style="font-size: 16px;" data-animate="fadeIn">The brands that trust
-                                    Vitral Grup and
-                                    in which Vitral Grup trusts. The raw materials and manufacturing methods of
-                                    <strong> top brands </strong> are the best guarantee of quality, durability and
-                                    sustainability for professionals in the sector and for the whole society.</span>
-                            </div>
-                            <ul class="clients-grid grid-4 nobottommargin clearfix" data-animate="fadeIn">
-
-                                <li><a href="https://es.saint-gobain-building-glass.com/es" target="_blank"><img
-                                            src="../images/logos/climalit.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="https://es.saint-gobain-building-glass.com/es" target="_blank"><img
-                                            src="../images/logos/climalit-plus.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="https://www.rehau.com/es-es" target="_blank"><img
-                                            src="../images/logos/rehau.png" alt="Clients"></a>
-                                </li>
-                                <li><a href="https://www.itesal.es/" target="_blank"><img
-                                            src="../images/logos/itesal.png" alt="Clients"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="divider divider-center divider-border"><i class="icon-line-minus"></i>
-                </div>
-
-                <div id="commitment" class="container clearfix topmargin">
-                    <div class="row clearfix">
-
-                        <div class="col-lg-12">
-                            <div class="heading-block center">
-                                <h4 class="t500 center bottommargin-sm" style="color: rgb(65, 126, 65) !important;">
-                                    Environmental commitment
-                                </h4>
-                                <p class="ls0 t300 center bottommargin" style="font-size: 16px;" data-animate="fadeIn">
-                                    At Vitral Grup, as
-                                    industrial manufacturers within the construction sector, two of our
-                                    main concerns are the environmental impact we generate, with the
-                                    materials and processes of our factories, and the needs of the local community. We have developed a culture of pollution prevention through
-                                    planning each one of the phases of our daily activity.</p>
-                            </div>
-                            <div class="col_full">
-                                <div class="row align-items-stretch clearfix">
-
-                                    <div class="col-md-6 bottommargin" data-animate="fadeInLeft">
-                                        <div class="feature-box fbox-plain">
-                                            <div class="fbox-icon">
-                                                <img src="../images/icons/adword.png" alt="">
-                                            </div>
-                                            <h6>RAW MATERIALS</h6>
-                                            <p>Our suppliers certify their social and environmental commitment
-                                                in all phases of their products, from design, through
-                                                manufacturing and finally the destruction process. Vitral Grup
-                                                is committed to continuously improving and generate the greatest positive impact
-                                                both in its methods and in the products it manufactures.</p>
-                                            <p>
-                                                <div class="col_half">
-
-                                                    <a
-                                                        href="https://climalit.es/wp-content/uploads/2018/10/catalogo-breeam-1.pdf">BREEAM<sup
-                                                            style="font-size: xx-small;">&reg;</sup> from
-                                                        Saint-Gobain
-                                                        Glass</a> <br>
-                                                    <a
-                                                        href="https://climalit.es/wp-content/uploads/2018/10/leed-breeam-verde-1.pdf">LEED<sup
-                                                            style="font-size: xx-small;">&reg;</sup> from Saint-Gobain
-                                                        Glass</a>
-                                                    <a href="docs/inf-tecnica/rehau-vinyl-plus.pdf">VINYL PLUS<sup
-                                                            style="font-size: xx-small;">&reg;</sup> from REHAU</a>
-                                                </div>
-
-                                                <div class="col_half col_last">
-
-                                                    <a href="http://itesal.es/documentos/dapesp.pdf">Environmental Statement from ITESAL<sup
-                                                            style="font-size: xx-small;">&reg;</sup></a> <br>
-                                                    <a
-                                                        href="http://itesal.es/documentos/carta%20adhesion%20pacto%20mundial.pdf">Global Agreement Adherence of ITESAL<sup
-                                                            style="font-size: xx-small;">&reg;</sup></a>
-                                                </div>
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 bottommargin" data-animate="fadeInRight">
-                                        <div class="feature-box fbox-plain">
-                                            <div class="fbox-icon">
-                                                <a href="#"><img src="../images/icons/analysis.png"
-                                                        alt="Finance Assistance"></a>
-                                            </div>
-                                            <h6>THE PRODUCT AND ITS IMPACT</h6>
-                                            <p>Buildings are responsible for the 30% of the global energy consumption
-                                                and
-                                                the 28% of the CO<sub>2</sub> emissions. The building enclosures
-                                                 and its quality, both in the manufacturing process and
-                                                installation, are key to create spaces
-                                                thermally
-                                                isolated from the outside, with optimal ventilation and entry
-                                                of natural light. That is why the correct advice and
-                                                planning together with the right product are essential
-                                                to reduce the environmental impact of the
-                                                building.
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 bottommargin" data-animate="fadeInLeft">
-                                        <div class="feature-box fbox-plain">
-                                            <div class="fbox-icon">
-                                                <a href="#"><img src="../images/icons/result.png"
-                                                        alt="Smart Builders"></a>
-                                            </div>
-                                            <h6>LIFE CYCLE ANALYSIS</h6>
-                                            <p>We know that our product will generate the least environmental impact
-                                                thanks to its
-                                                long lifespan and the materials that compose it. Aluminum has a recycling rate of more than 80% and requires only the
-                                                5% of the energy required for its original production. Recycling
-                                                glass, with a
-                                                rate of more than a 70%, decreases emissions by more than a 40% and
-                                                reaches energy savings of a 30%.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6" data-animate="fadeInRight">
-                                        <div class="feature-box fbox-plain">
-                                            <div class="fbox-icon">
-                                                <a href="#"><img src="../images/icons/environmental.png"
-                                                        alt="Interiorly Designed"></a>
-                                            </div>
-                                            <h6>WASTE MANAGEMENT</h6>
-                                            <p>At Vitral Grup we manage all waste according to the regulation so
-                                                it's always recycled, reused or processed by landfill companies
-                                                controlled and regulated by the administration. It is very important in order to
-                                                avoid the contamination generated by the deposit of these materials at the
-                                                environment as well as to avoid over-exploitation of
-                                                natural resources.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <a href="contacte.html"
-                    class="button button-3d nobottomborder button-full center tright t300 font-primary topmargin footer-stick"
-                    style="font-size: 26px;">
-                    <div class="container clearfix">
-                        Know more about us. <strong>Click here</strong> <i
-                            class="icon-angle-right" style="top:3px;"></i>
-                    </div>
-                </a>
-            </div>
-
-        </section><!-- #content end -->
+		</section><!-- #content end -->
 
         <!-- Footer
         ============================================= -->
@@ -526,7 +628,7 @@
 
                 <div class="container clearfix">
 
-                    <div class="col_half">
+                    <div class="col_two_third">
                         <div class="copyrights-menu copyright-links clearfix">
                             <a href="index.html">Home</a>/<a href="elgrup.html">What we do</a>/<a
                                 href="empresa.html">Company</a>/<a href="projectes.html">Projects</a>/<a
@@ -538,7 +640,7 @@
                             · Copyrights &copy; 2023 All Rights Reserved by VITRAL GRUP</div>
                     </div>
 
-                    <div class="col_half col_last tright">
+                    <div class="col_one_third col_last tright">
                         <div class="fright clearfix">
                             <a href="https://www.facebook.com/vitralgrup/"
                                 class="social-icon si-small si-borderless nobottommargin si-facebook">
@@ -568,16 +670,16 @@
     </div><!-- #wrapper end -->
 
     <!-- Go To Top
-	============================================= -->
+    ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
 
     <!-- External JavaScripts
-	============================================= -->
+    ============================================= -->
     <script src="../js/jquery.js"></script>
     <script src="../js/plugins.js"></script>
 
     <!-- Footer Scripts
-	============================================= -->
+    ============================================= -->
     <script src="../js/functions.js"></script>
 
 </body>
