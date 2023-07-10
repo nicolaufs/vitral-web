@@ -11546,7 +11546,6 @@ body:not(.device-touch) .clients-grid li a {
 }
 
 .clients-grid li a,
-.clients-grid li div,
 .clients-grid li img {
   display: block;
   width: 75%;
@@ -11566,6 +11565,7 @@ body:not(.device-touch) .clients-grid li a {
   line-height: 11px;
   text-align: center;
 }
+
 .catalog li a {
   padding-top: 0;
   padding-bottom: 0;
@@ -11585,6 +11585,8 @@ body:not(.device-touch) .clients-grid li a {
   font-size: 14px;
   line-height: 14px;
 }
+
+
 
 .catalog li a:hover {
   opacity: 0.8;
@@ -11620,6 +11622,15 @@ body:not(.device-touch) .clients-grid li a {
   left: 0;
   bottom: -1px;
   border-bottom: 1px dashed #ddd;
+}
+
+.catalog-download-button {
+  text-align: center;
+  border: none !important;
+  margin-bottom: 2px;
+  margin: none;
+  color: grey;
+  font-size: 12px;
 }
 
 /* ----------------------------------------------------------------
